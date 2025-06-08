@@ -1,16 +1,16 @@
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
   @font-face {
     font-family: $font-family;
-    src: url("#{$file-path}.woff2") format("woff2"),
-         url("#{$file-path}.woff") format("woff");
+    src: url('~assets/fonts/#{$file-path}.woff2') format('woff2'),
+         url('~assets/fonts/#{$file-path}.woff') format('woff');
     font-weight: $weight;
     font-style: $style;
     font-display: swap;
   }
 }
 
-@include font-face('Euclid Circular A', '../fonts/EuclidCircularA-Light', 300);
-@include font-face('Euclid Circular A', '../fonts/EuclidCircularA-Regular', 400);
-@include font-face('Euclid Circular A', '../fonts/EuclidCircularA-Medium', 500);
-@include font-face('Euclid Circular A', '../fonts/EuclidCircularA-Semibold', 600);
-@include font-face('Euclid Circular A', '../fonts/EuclidCircularA-Bold', 700);
+@include font-face('Euclid Circular A', 'EuclidCircularA-Light', 300);
+@include font-face('Euclid Circular A', 'EuclidCircularA-Regular', 400);
+@include font-face('Euclid Circular A', 'EuclidCircularA-Medium', 500);
+@include font-face('Euclid Circular A', 'EuclidCircularA-Semibold', 600);
+@include font-face('Euclid Circular A', 'EuclidCircularA-Bold', 700);
